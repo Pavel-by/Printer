@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Магазин</title>
+        <css>components/pages.css</css>
+        <css>base.css</css>
+        <css>shop.css</css>
+        <css>components/gallery.css</css>
+        <css>components/select.css</css>
+        <jslib>pages.js</jslib>
+        <jslib>image-changer.js</jslib>
+        <jslib>gallery.js</jslib>
+        <jslib>select.js</jslib>
+    </head>
+    <body>
+        <phplib>header.php</phplib>
+        <php>page.php</php>
+        <phplib>footer.php</phplib>
+        <phplib>basket.php</phplib>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 801.7060304327614
+      }
+    },
+    "color": {
+      "value": "#5f5f5f"
+    },
+    "shape": {
+      "type": "image",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 6
+      },
+      "image": {
+        "src": "/images/settings-wheel.png",
+        "width": 190,
+        "height": 190
+      }
+    },
+    "opacity": {
+      "value": 0.21646062821684559,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 16.05118091298284,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 9.744926547616142,
+        "size_min": 20.858934067451116,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 80.17060304327615,
+      "color": "#000000",
+      "opacity": 0.4,
+      "width": 0.6413648243462091
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.8,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 3607.6771369474263,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": false
+}

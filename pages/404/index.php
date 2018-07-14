@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <title>404</title>
+        <css>base.css</css>
+    </head>
+    <body>
+        <php>page.php</php>
+    </body>
+</html>

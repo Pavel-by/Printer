@@ -1,0 +1,27 @@
+@import (reference) "../base.less";
+
+.scroll-to-top-button {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100vh;
+  -webkit-background-size: 80%;
+  background-size: 50%;
+  background-image: url("/images/top-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center calc(@headerHeight + 20px);
+  background-color: rgba(19, 111, 255, 0);
+  z-index: 9;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-to-top-button.active {
+  display: inline-block;
+}
+
+
+.scroll-to-top-button:hover {
+  background-color: rgba(19, 111, 255, 0.2);
+}

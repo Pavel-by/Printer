@@ -1,0 +1,73 @@
+.select-image-item {
+  height: 150px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.select-image-item:hover {
+  border-color: #e0e0e0;
+}
+.select-image-item img,
+.selected-image-block img {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.select-image-item img.passive {
+  opacity: 0;
+}
+.select-image-input {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+.selected-image-block {
+  height: 150px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.selected-image-block:hover {
+  border-color: #e0e0e0;
+}
+.selected-image-block .close {
+  opacity: 0;
+  z-index: 1;
+}
+.selected-image-block:hover .close {
+  opacity: 1;
+}
+/*# sourceMappingURL=select-image.css.map */

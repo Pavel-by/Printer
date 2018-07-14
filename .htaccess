@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^(\/?(images|system|files|style|fonts|libs[/\\](js|json)).*)$ $1 [L]
+RewriteRule ^(.*)$ coordinator.php [L]

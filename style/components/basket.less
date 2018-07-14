@@ -1,0 +1,182 @@
+@import (reference) "../base";
+
+#basket-place {
+  position: relative;
+  text-align: right;
+}
+
+#basket-place>a {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-align: right;
+}
+
+.basket-image {
+  margin: 15px;
+  height: calc(100% - 30px);
+  display: inline-block;
+  position: relative;
+  width: unset;
+}
+
+.basket-label {
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: rgba(255, 134, 0, 0);
+  color: gray;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -ms-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  top: 8px;
+  text-decoration: none;
+  right: 5px;
+}
+
+.basket-label.active {
+  display: inline-block;
+  color: white;
+  background-color: rgba(255, 134, 0, 1);
+}
+
+.basket-preview {
+  position: absolute;
+  right: 10000000000px;
+  margin: 0;
+  background-color: white;
+  border: 0px solid #e1e1e1;
+  box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+  border-radius: 4px;
+  overflow: visible;
+  z-index: 10;
+  min-width: 200px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.basket-preview > .input {
+  border-radius: 0 !important;
+  border-bottom-width: 0 !important;
+  margin: 0 !important;
+}
+
+.basket-preview > .input:first-child {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.basket-preview > .input:last-child {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-width: 1px !important;
+}
+
+.basket-preview:before {
+  position: absolute;
+  top: -7px;
+  right: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: white;
+  display: inline-block;
+  border: 0;
+  width: 13px;
+  height: 13px;
+  content: "";
+}
+
+.basket-preview.active {
+  top: 100%;
+  right: 0;
+  opacity: 1;
+  -webkit-transition: opacity .1s, top .1s, right 0s ease-out .0s;
+  -moz-transition: opacity .1s, top .1s, right 0s ease-out .0s;
+  -ms-transition: opacity .1s, top .1s, right 0s ease-out .0s;
+  -o-transition: opacity .1s, top .1s, right 0s ease-out .0s;
+  transition: opacity .1s, top .1s, right 0s ease-out .0s;
+}
+
+.basket-preview.passive {
+  -webkit-transition: opacity .1s ease-out .2s, top .1s ease-out .2s, right 0s ease-out .4s;
+  -moz-transition: opacity .1s ease-out .2s, top .1s ease-out .2s, right 0s ease-out .4s;
+  -ms-transition: opacity .1s ease-out .2s, top .1s ease-out .2s, right 0s ease-out .4s;
+  -o-transition: opacity .1s ease-out .2s, top .1s ease-out .2s, right 0s ease-out .4s;
+  transition: opacity .1s ease-out .2s, top .1s ease-out .2s, right 0s ease-out .4s;
+  opacity: 0;
+  right: -1000000px;
+  top: calc(100% + 10px);
+}
+
+.basket-preview-button {
+  width: 100%;
+  text-align: left;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #292929;
+  font-weight: bold;
+  background: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.basket-preview-button:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.basket-preview-line {
+  border: 1px solid white;
+  text-align: left;
+  padding: 5px 5px 5px 15px;
+  margin: 0;
+  font-size: 14px;
+  color: #2a2a2a;
+  display: flex;
+  -webkit-appearance: unset;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.basket-preview-line:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.basket-preview-line.passive {
+  cursor: default;
+  background-color: #fff;
+}
+
+.basket-preview-count {
+  color: @colorAccent;
+  padding: 0 6px;
+}
+
+.basket-preview-divider {
+  padding: 0;
+  margin: 1px auto;
+  width: 90%;
+  height: 1px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  display: block;
+}

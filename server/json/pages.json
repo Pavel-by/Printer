@@ -1,0 +1,57 @@
+[
+  {
+    "dir": "index",
+    "url": "/^(\\/?)$/"
+  },
+  {
+    "dir": "fill",
+    "url": "/^(\\/?fill\\/?)$/"
+  },
+  {
+    "dir": "contacts",
+    "url": "/^(\\/?contacts\\/?)$/"
+  },
+  {
+    "dir": "shop",
+    "url": "/^(\\/?shop(\\/.*)?)$/"
+  },
+  {
+    "dir": "basket",
+    "url": "/^(\\/?basket\\/?)$/"
+  },
+  {
+    "dir": "404",
+    "url": "/^(\\/?404\\/?)$/"
+  },
+  {
+    "dir": "401",
+    "url": "/^(\\/?401\\/?)$/"
+  },
+  {
+    "dir": "login",
+    "url": "/^(\\/?login\\/?)$/"
+  },
+
+
+
+
+  {
+    "redirect": "/admin/fill",
+    "url": "/^(\\/?admin\\/?)$/"
+  },
+  {
+    "dir": "admin/fill",
+    "url": "/^(\\/?admin\\/fill\\/?)$/",
+    "access": 5
+  },
+  {
+    "dir": "admin/shop",
+    "url": "/^(\\/?admin\\/shop\\/?)$/",
+    "access": 5
+  },
+  {
+    "dir": "admin/orders",
+    "url": "/^(\\/?admin\\/orders\\/?)$/",
+    "access": 5
+  }
+]

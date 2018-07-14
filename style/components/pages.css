@@ -1,0 +1,67 @@
+.component-pages-root {
+    display: block;
+}
+
+.component-pages-select-button {
+    display: inline-block;
+    background-color: #e7e7e7;
+    margin: 5px;
+    padding: 5px;
+    color: #393939;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+}
+
+.component-pages-select-button.active {
+    background-color: white;
+}
+
+.component-pages-select-button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.component-pages-selector {
+    display: inline-block;
+    background-color: #e7e7e7;
+    margin: 5px;
+    padding: 5px;
+    color: #393939;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: normal;
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+}
+
+.select-page-container {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.select-page-container>.input {
+    border-radius: 0 !important;
+    border-right-width: 0;
+}
+
+.select-page-container>.input:first-child {
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.select-page-container>.input:last-child {
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-right-width: 1px !important;
+}
+
+.component-pages-bottom {
+    padding: 10px 0;
+}
+
+/*.component-pages-selector:focus {
+    background-color: white;
+}*/

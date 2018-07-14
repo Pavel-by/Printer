@@ -1,0 +1,63 @@
+ 2018-04-28 15:06:34:             Shop: SQL: 
+ 2018-04-28 15:08:04:             Shop: SQL: 
+ 2018-05-01 08:50:21:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-15, 0' at line 1
+ 2018-05-01 08:51:21:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-15, 0' at line 1
+ 2018-05-01 08:51:23:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-15, 0' at line 1
+ 2018-05-08 13:50:05:             User: SQL: 
+ 2018-05-08 13:50:14:             User: SQL: 
+ 2018-05-08 13:50:42:             User: SQL: 
+ 2018-05-12 10:32:23:       Cartridges: SQL: Unknown column 'image' in 'field list'
+ 2018-05-12 10:34:08:       Cartridges: SQL: Unknown column 'image' in 'field list'
+ 2018-05-12 10:55:11:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-12 10:56:58:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-12 10:57:16:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-12 10:58:11:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-12 10:58:38:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-12 10:59:22:       Cartridges: SQL: No data supplied for parameters in prepared statement
+ 2018-05-13 12:34:18:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY `id` DESC' at line 1
+ 2018-05-13 12:34:56:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY `id` DESC' at line 1
+ 2018-05-13 12:35:16:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY `id` DESC' at line 1
+ 2018-05-13 12:37:13:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY `id` DESC' at line 1
+ 2018-05-15 16:28:34:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:28:53:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:29:38:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:30:41:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:30:54:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:32:16:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:32:52:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-05-15 16:34:12:       categories: SQL: No data supplied for parameters in prepared statement
+ 2018-06-16 12:43:25:           Orders: SQL: No data supplied for parameters in prepared statement
+ 2018-06-16 12:44:13:           Orders: SQL: No data supplied for parameters in prepared statement
+ 2018-06-16 12:45:18:           Orders: SQL: No data supplied for parameters in prepared statement
+ 2018-06-16 12:45:49:           Orders: SQL: No data supplied for parameters in prepared statement
+ 2018-06-16 14:00:28:           Orders: SQL: No data supplied for parameters in prepared statement
+ 2018-07-13 14:47:05:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4LIMIT 0, 16' at line 1
+ 2018-07-13 14:47:15:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4LIMIT 0, 16' at line 1
+ 2018-07-13 14:48:40:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASKLIMIT 0, 16' at line 1
+ 2018-07-13 14:49:39:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASKLIMIT 0, 16
+ 2018-07-13 14:49:39:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASKLIMIT 0, 16' at line 1
+ 2018-07-13 14:50:20:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASK LIMIT 0, 16
+ 2018-07-13 14:50:20:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASK LIMIT 0, 16' at line 1
+ 2018-07-13 14:51:22:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? LIMIT 0, 16 ORDER BY `id` ASK
+ 2018-07-13 14:51:22:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASK' at line 1
+ 2018-07-13 14:52:08:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? LIMIT 0, 16 ORDER BY `id` ASC
+ 2018-07-13 14:52:08:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASC' at line 1
+ 2018-07-13 14:53:31:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASC' at line 1
+ 2018-07-13 14:54:59:             Shop: SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASC' at line 1
+ 2018-07-13 14:56:44:             Shop: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASC' at line 1
+ 2018-07-13 14:57:20:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? LIMIT 0, 16 ORDER BY `id` ASC
+ 2018-07-13 14:57:20:             Shop: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `id` ASC' at line 1
+ 2018-07-13 14:57:49:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC LIMIT 0, 16
+ 2018-07-13 14:57:49:             Shop: SELECT COUNT(*) as 'count' FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC
+ 2018-07-13 14:57:54:             Shop: SELECT * FROM `shop` WHERE `id`=? ORDER BY `id` ASC
+ 2018-07-13 14:57:55:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC LIMIT 0, 16
+ 2018-07-13 14:57:55:             Shop: SELECT COUNT(*) as 'count' FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC
+ 2018-07-13 14:57:56:             Shop: SELECT * FROM `shop` WHERE `id`=? ORDER BY `id` ASC
+ 2018-07-13 14:57:57:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC LIMIT 0, 16
+ 2018-07-13 14:57:57:             Shop: SELECT COUNT(*) as 'count' FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC
+ 2018-07-13 14:57:58:             Shop: SELECT * FROM `shop` WHERE `id`=? ORDER BY `id` ASC
+ 2018-07-13 14:57:59:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC LIMIT 0, 16
+ 2018-07-13 14:57:59:             Shop: SELECT COUNT(*) as 'count' FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC
+ 2018-07-13 14:58:01:             Shop: SELECT * FROM `shop` WHERE `id`=? ORDER BY `id` ASC
+ 2018-07-13 14:58:02:             Shop: SELECT * FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC LIMIT 0, 16
+ 2018-07-13 14:58:02:             Shop: SELECT COUNT(*) as 'count' FROM `shop` WHERE `category` LIKE ? ORDER BY `id` ASC

@@ -1,0 +1,753 @@
+@headerHeight: 50px;
+@smallScreen: 600px;
+@highScreen: 1100px;
+@textMargin: 20px;
+
+@maxContentWidth: 1100px;
+
+@fontSizePageHeader: 28px;
+@fontSizeH2: 24px;
+@fontSizeH3: 20px;
+@fontSizeNormal: 16px;
+@fontSizeSmall: 14px;
+
+@backgroundWhite: white;
+@backgroundGray: #f9f9f9;
+
+@textColorLightGray: #a8a8a8;
+@textColorGray: #686868;
+@textColorDarkGray: #4b4b4b;
+@textColorNormal: #252525;
+
+@colorPrimary: #3b6ff3;
+@colorPrimaryDark: #03619a;
+@colorAccent: #ff8600;
+@colorError: red;
+
+@font-face {
+  font-family: Europe;
+  src: url("/fonts/europe-normal.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Europe;
+  src: url("/fonts/europe-bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Europe;
+  src: url("/fonts/europe-italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Europe;
+  src: url("/fonts/europe-bold-italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Europe, sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+Экраны с высоким разрешением
+ */
+@media screen and (min-width: @highScreen) {
+
+}
+
+/**
+Средние экраны
+ */
+@media screen and (min-width: @smallScreen) and (max-width: @highScreen - 1) {
+
+}
+
+/**
+Экраны с низким разрешением
+ */
+@media screen and (max-width: @smallScreen) {
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+Классы, используемые вне зависимости от места расположения элемента.
+ */
+.flex-block {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-top {
+  align-items: flex-start;
+}
+
+.flex-middle {
+  align-items: center;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-half {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.limit-block {
+  max-width: @maxContentWidth;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.gray-block {
+  background-color: @backgroundGray;
+}
+
+.hidden {
+  display: none !important;
+}
+
+hr {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  background-color: #e3e3e3;
+}
+
+//Отступы справа и слева для контента
+.content-indent {
+  margin: 0 20px;
+  width: calc(100% - 40px);
+  display: block;
+}
+
+p {
+  font-size: @fontSizeNormal;
+  color: @textColorNormal;
+  line-height: 24px;
+  margin: @textMargin 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: @fontSizeH2;
+  color: @textColorNormal;
+  line-height: @fontSizeH2;
+  margin: 0;
+  padding: @textMargin * 3 0 8px 0;
+  position: relative;
+}
+
+h2:after {
+  content: "";
+  display: inline-block;
+  background-color: @colorPrimaryDark;
+  width: 100px;
+  max-width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+li {
+  font-size: @fontSizeNormal;
+  color: @textColorNormal;
+  line-height: 24px;
+  margin: @textMargin / 2 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: @fontSizeH3;
+  color: @textColorNormal;
+  line-height: 24px;
+  margin: @textMargin * 2 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.text-hint {
+  font-size: 14px;
+  margin: 5px 0;
+  color: @textColorGray;
+  padding: 0;
+  line-height: 17px;
+}
+
+/**
+Фон страницы
+ */
+#main-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url("/images/background1.jpg") center;
+  background-size: cover;
+}
+
+#main-background:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/**
+Меню
+ */
+.header {
+  background-color: black;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: @headerHeight;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.19);
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+
+.header.small {
+  height: @headerHeight;
+}
+
+.header.big {
+  height: @headerHeight + 20px;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 3px 12px;
+  font-size: 14px;
+  color: #d4d4d4;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  color: white;
+}
+
+.logo {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.logo img {
+  height: calc(100% - 20px);
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+/**
+Блок, в который оборачивается весь контент страницы, включая footer
+ */
+.pre-content {
+  width: 100%;
+  display: inline-block;
+  margin: @headerHeight auto auto auto;
+  padding: 0;
+  position: relative;
+  min-height: calc(100% - @headerHeight);
+  z-index: 1;
+  background-color: white;
+}
+
+.footer {
+  background-color: white;
+  z-index: 0;
+  position: relative;
+  padding: 140px 0 70px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: @maxContentWidth;
+  left: 50%;
+  top: 70px;
+  transform: translate(-50%, 0);
+  height: 1px;
+  background-color: @textColorLightGray;
+}
+
+.footer .links {
+  text-align: left;
+}
+
+.footer-header {
+  font-size: @fontSizeSmall;
+  color: @textColorDarkGray;
+  padding: 5px 0;
+  margin: 5px 0;
+  display: block;
+  line-height: @fontSizeNormal;
+  position: relative;
+  font-weight: bold;
+}
+
+.footer-header:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+  background-color: @colorPrimaryDark;
+  content: "";
+}
+
+.footer-link {
+  font-size: @fontSizeSmall;
+  color: @textColorGray;
+  padding: 0;
+  margin: 5px 0;
+  display: block;
+  line-height: @fontSizeNormal;
+  text-decoration: none;
+}
+
+/*
+Разделитель - если контент "липнет", а отступы не хочется прописывать
+ */
+Divider {
+  display: block;
+  height: 0;
+  padding: 30px;
+}
+
+/**
+Стилизация полей ввода
+ */
+.input {
+  margin: 10px 10px 10px 0;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Europe, sans-serif;
+  white-space: nowrap;
+  -webkit-appearance: unset;
+  position: relative;
+  text-decoration: none;
+}
+
+.input-light {
+  background-image: linear-gradient(-180deg, (@colorAccent + #333) 0%, (@colorAccent + #000)  90%);
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border-color: @colorAccent;
+  cursor: pointer;
+  padding: 8px 20px;
+  margin: 20px;
+}
+
+.input-light:hover {
+
+}
+
+.pre-input {
+  background: white;
+  color: #464646;
+  font-weight: 500;
+  border: 1px solid #cccccc !important;
+  -webkit-appearance: textfield;
+  cursor: default;
+}
+
+.pre-input:hover {
+  border: 1px solid #cccccc !important;
+  box-shadow: none;
+  outline: none;
+}
+
+.input-text {
+  color: #333333;
+  background-color: #fafbfc;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+  outline: none;
+}
+
+.input-text:focus {
+  border-color: #2188ff;
+  outline: none;
+  //outline: #c2daf5 solid 3px;
+  //box-shadow: inset 0 1px 2px rgba(27,31,35,0.075),0 0 0 0.2em rgba(3,102,214,0.3)
+}
+
+.input-text:disabled {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+  border-color: #eeeeee;
+  color: gray;
+}
+
+.input-button {
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+  font-weight: 600;
+  color: #444d56;
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-button:hover, .input-button:focus {
+  border-color: rgba(27, 31, 35, 0.35);
+  background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+  cursor: pointer;
+}
+
+.input-button:active, .input-button.active {
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+  outline: none;
+}
+
+.input-submit {
+  background-image: linear-gradient(-180deg, @colorPrimary 0%, @colorPrimaryDark 90%);
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: 1px solid @colorPrimaryDark;
+}
+
+.input-submit:hover, .input-submit:focus {
+  border-color: @colorPrimaryDark - #222;
+  background-image: linear-gradient(-180deg, (@colorPrimary - #111) 0%, @colorPrimaryDark 90%);
+  cursor: pointer;
+}
+
+.input-submit:active {
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+}
+
+.input-submit:disabled {
+  background-image: linear-gradient(-180deg, rgba(59, 111, 243, 0.76) 0%, rgba(3, 97, 154, 0.74) 90%);
+  cursor: default;
+  border-color: #cccccc;
+}
+
+.input-menu-item {
+  background-color: white;
+  border-color: #e6e6e6;
+  color: @colorPrimaryDark;
+  font-weight: normal;
+  padding: 10px 20px !important;
+  overflow: hidden;
+}
+
+.input-menu-item:hover {
+  background-color: #fafafa;
+}
+
+.input-menu-item.active {
+  color: black;
+  cursor: default;
+  background-color: white;
+}
+
+.input-menu-item.active:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: @colorAccent;
+  content: "";
+}
+
+.input-selector {
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+  font-weight: 600;
+  color: #444d56;
+  outline: none;
+  padding-right: 24px !important;
+}
+
+.input-selector:after {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: "\25BC";
+  color: gray;
+  font-size: 14px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+.input-selector:hover, .input-selector:focus {
+  border-color: rgba(27, 31, 35, 0.35);
+  background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+  cursor: pointer;
+}
+
+.input-selector:disabled {
+  border-color: #f9f9f9;
+  color: #7b8c9c;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+
+/**
+Заголовок для поля ввода
+ */
+.input-header {
+  margin: 10px 10px 0 0;
+  padding: 6px 12px 6px 0;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid transparent;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Europe, sans-serif;
+  white-space: nowrap;
+  -webkit-appearance: unset;
+  position: relative;
+  text-decoration: none;
+}
+
+/**
+Ошибка после поля ввода
+ */
+.input-error {
+  margin: 10px 0;
+  padding: 6px 12px 6px 0;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid transparent;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Europe, sans-serif;
+  -webkit-appearance: unset;
+  position: relative;
+  text-decoration: none;
+  color: @colorError;
+}
+
+.input-error p {
+  font-size: 14px;
+  color: @colorError;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.input-error ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.input-error li {
+  margin: 5px 0;
+  padding: 0;
+  color: @colorError;
+  font-size: 14px;
+}
+
+.input.error {
+  border-color: @colorError;
+}
+
+/**
+Блок, обрезающий отступы у дочерних элементов
+ */
+.input-block {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.input-block > .input,
+.input-block > .input-block-item{
+  margin: 0;
+}
+
+.merge-input-border-radiuses-vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+
+.merge-input-border-radiuses-vertical > .input,
+.merge-input-border-radiuses-vertical > div {
+  border-radius: 0 !important;
+  border-bottom-width: 0 !important;
+  margin: 0 !important;
+}
+
+.merge-input-border-radiuses-vertical > .input:hover,
+.merge-input-border-radiuses-vertical > div:hover,
+.merge-input-border-radiuses-vertical > .input:focus,
+.merge-input-border-radiuses-vertical > div:focus {
+  border-bottom-width: 1px !important;
+}
+
+.merge-input-border-radiuses-vertical > .input:hover + .input,
+.merge-input-border-radiuses-vertical > div:hover + div,
+.merge-input-border-radiuses-vertical > .input:focus + .input,
+.merge-input-border-radiuses-vertical > div:focus + div {
+  border-top-width: 0 !important;
+}
+
+.merge-input-border-radiuses-vertical > .input:first-child,
+.merge-input-border-radiuses-vertical > div:first-child {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.merge-input-border-radiuses-vertical > .input:last-child,
+.merge-input-border-radiuses-vertical > div:last-child {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-width: 1px !important;
+}
+
+.merge-input-border-radiuses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+
+.merge-input-border-radiuses > .input {
+  border-radius: 0 !important;
+  border-right-width: 0 !important;
+  margin: 0 !important;
+}
+
+.merge-input-border-radiuses > .input:hover,
+.merge-input-border-radiuses > .input:focus {
+  border-right-width: 1px !important;
+}
+
+.merge-input-border-radiuses > .input:hover + .input,
+.merge-input-border-radiuses > .input:focus + .input {
+  border-left-width: 0 !important;
+}
+
+.merge-input-border-radiuses > .input:first-child {
+  border-bottom-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+
+.merge-input-border-radiuses > .input:last-child {
+  border-bottom-right-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-right-width: 1px !important;
+}
+
+.loading {
+  animation: 2s spin linear infinite;
+  display: none;
+}
+
+.loading.active {
+  display: inline-block;
+}
